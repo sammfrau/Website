@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+<nav class="menuBar">
+    <button id="menuDropdown">Menu</button>
+    <ul id="menuOutputArea">
+        <button onclick="window.location.href='index.html'">Home</button>
+        <button onclick="window.location.href='about/about.html'">About</button>
+    </ul>
+</nav>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
 </head>
-<body>
-    <h1 id="header1"></h1>
+<body class="mainPage">
+    <h1 id="header1">Welcome to my Website</h1>
     <button id="button1">Click me!</button>
-    <p id="button1OutputArea"></p>
+    <p id="button1OutputArea">Yowaddup</p>
     <script src="index.js"></script>
 </body>
 </html>
