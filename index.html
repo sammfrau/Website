@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<nav class="menuBar">
-    <button id="menuDropdown">Menu</button>
-    <ul id="menuOutputArea">
-        <button onclick="window.location.href='index.html'">Home</button>
-        <button onclick="window.location.href='about/about.html'">About</button>
-    </ul>
-</nav>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body class="mainPage">
-    <h1 id="header1">Welcome to my Website</h1>
-    <button id="button1">Click me!</button>
-    <p id="button1OutputArea">Yowaddup</p>
-    <script src="index.js"></script>
-</body>
+    <!-- Website setup -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sam Frauenhoffer's Website</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <!-- Website main -->
+    <body class="page">
+        <!-- Website menu for site navigation -->
+        <nav class="menu">
+            <button id="menuDropdown">Menu</button>
+            <div id="menuOutputArea">
+                <button id="homeButton">Home</button>
+                <button id="aboutButton">About</button>
+            </div>
+        </nav>
+        <!-- Website contents -->
+        <h1 id="header1">Welcome to my Website</h1>
+        <button id="button1">Click me!</button>
+        <div id="button1OutputArea">
+            <img src="./images/index/James.jpg" alt="This is my cat James." width="225" height="300">
+            <p>Yowaddup</p>
+        </div>
+        <!-- Website script -->
+        <script src="index.js"></script>
+    </body>
 </html>
