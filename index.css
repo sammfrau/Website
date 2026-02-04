@@ -87,11 +87,36 @@
 .page > div
 {
     display: none;
-    text-align: center;
     margin: 20px auto;
     width: fit-content;
     color: lightgrey;
     font-family: 'Impact';
     font-size: 2em;
     text-align: center;
+}
+
+/* The bottom Neurodivergent image*/
+.imageNeurodivergent
+{
+    display: block;
+    position: fixed;
+    margin-left: 50%;
+    translate: -50%;
+    bottom: 0;
+    padding: 100px;
+    width: 300px;
+    height: auto;
+}
+
+/* The bottom Neocities image*/
+.imageNeocities
+{
+    display: block;
+    position: fixed;
+    margin-left: 50%;
+    translate: -50%;
+    bottom: 0;
+    padding: 25px;
+    width: 200px;
+    height: auto;
 }
