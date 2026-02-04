@@ -1,7 +1,6 @@
 /* The backround of this page */
 .page
 {
-    background-color: black;
     margin: 0px;
     padding: 0px;
 }
@@ -11,7 +10,7 @@
 {
     margin: 0px;
     padding: 5px;
-    background-color: slategrey;
+    background-color: black;
     display: flex;
 }
 
@@ -114,7 +113,7 @@
     position: absolute;
     margin: 0px;
     padding: 5px;
-    background-color: slategrey;
+    background-color: black;
     height: 85px;
     width: 100%;
 }
