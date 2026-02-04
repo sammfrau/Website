@@ -1,12 +1,17 @@
-/* The backround of the website */
+/* The backround of this page */
 .page
 {
-    background-color: darkslategray;
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
 }
 
 /* The menu overall */
 .menu
 {
+    margin: 0px;
+    padding: 5px;
+    background-color: slategrey;
     display: flex;
 }
 
@@ -53,8 +58,18 @@
     cursor: pointer;
 }
 
+/* The main part of this page */
+.main
+{
+    margin: 0px;
+    padding: 1px;
+    height: 100vh;
+    background-color: darkslategray;
+    display: block;
+}
+
 /* The header text */
-.page > h1
+.main >  h1
 {
     color: lightgrey;
     font-family: 'Segoe UI';
@@ -62,28 +77,36 @@
     text-align: center;
 }
 
-/* The bottom Neurodivergent image*/
+.footer
+{
+    position: absolute;
+    margin: 0px;
+    padding: 5px;
+    background-color: slategrey;
+    height: 85px;
+    width: 100%;
+}
+
+/* The bottom Neurodivergent image */
 .imageNeurodivergent
 {
     display: block;
-    position: fixed;
-    margin-left: 50%;
+    position: absolute;
     translate: -50%;
-    bottom: 0;
-    padding: 90px;
-    width: 300px;
+    left: 50%;
+    width: 200px;
     height: auto;
+    padding-top: 5px;
 }
 
-/* The bottom Neocities image*/
+/* The bottom Neocities image */
 .imageNeocities
 {
     display: block;
-    position: fixed;
-    margin-left: 50%;
+    position: absolute;
     translate: -50%;
-    bottom: 0;
-    padding: 10px;
-    width: 150px;
+    left: 50%;
+    width: 100px;
     height: auto;
+    padding-top: 35px;
 }
