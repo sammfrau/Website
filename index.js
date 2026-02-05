@@ -11,6 +11,9 @@ let homeLink = 'index.html';
 let aboutLink = 'about.html';
 
 
+/* ===================================================================================== */
+
+
 // Shows or hides an area when a button is clicked
 function toggleVisibility(element)
 {
@@ -33,6 +36,9 @@ function gotoLink(element)
 {
     window.location.href = element;
 }
+
+
+/* ===================================================================================== */
 
 
 // Attaches the event listeners for the Menu and for this page's button for visibility
