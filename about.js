@@ -1,12 +1,21 @@
+// Constants
+const aboutText= `Missouri S&T Computer Engineering graduate currently serving as a Districtwide Technology Support Specialist for Rockwood School District.
+I specialize in providing dedicated, in-person technical support for Rockwood Valley Middle School, ensuring seamless technology integration for both staff and students.
+My expertise lies in high-level troubleshooting, end-user communication, and full-cycle asset management.
+I am passionate about leveraging my engineering background to help resolve technical challenges in real-time.
+Currently, I am expanding my technical knowledge by deepening my skills in Website and Application Development.`;
+
 // Accessing elements
 let menuDropdown = document.getElementById('menuDropdown');
 let menuOutputArea = document.getElementById('menuOutputArea');
 let homeButton = document.getElementById('homeButton');
 let aboutButton  = document.getElementById('aboutButton');
+let paragraph1 = document.getElementById("paragraph1");
 
 // Defining elements
 let homeLink = 'index.html';
 let aboutLink = 'about.html';
+paragraph1.textContent = aboutText;
 
 
 /* ===================================================================================== */
