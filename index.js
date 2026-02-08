@@ -1,17 +1,14 @@
+/* ================================== In Every Page ================================== */
+
 // Accessing elements
-let menuDropdown = document.getElementById('menuDropdown');
-let menuOutputArea = document.getElementById('menuOutputArea');
-let button1 = document.getElementById('button1');
-let button1OutputArea = document.getElementById('button1OutputArea');
-let homeButton = document.getElementById('homeButton');
-let aboutButton  = document.getElementById('aboutButton');
+let buttonMenu= document.getElementById('buttonMenu');
+let areaMenu = document.getElementById('areaMenu');
+let buttonHome = document.getElementById('buttonHome');
+let buttonAbout  = document.getElementById('buttonAbout');
 
 // Defining elements
-let homeLink = 'index.html';
-let aboutLink = 'about.html';
-
-
-/* ===================================================================================== */
+let linkHome = 'index.html';
+let linkAbout = 'about.html';
 
 
 // Shows or hides an area when a button is clicked
@@ -31,32 +28,40 @@ function toggleVisibility(element)
     }
 }
 
-// Goes to the defined link in the same window and tab
+// Goes to the defined link in the same window and tab, can't do links via folders
 function gotoLink(element)
 {
     window.location.href = element;
 }
 
 
-/* ===================================================================================== */
-
-
-// Attaches the event listeners for the Menu and for this page's button for visibility
-menuDropdown.addEventListener('click', function()
+// Attaches the event listeners to the Menu for visibility
+buttonMenu.addEventListener('click', function()
 {
-    toggleVisibility(menuOutputArea);
-});
-button1.addEventListener('click', function()
-{
-    toggleVisibility(button1OutputArea);
+    toggleVisibility(areaMenu);
 });
 
-// Attaches the event listeners for the Menu and for this page's button for opening links
-homeButton.addEventListener('click', function()
+// Attaches the event listeners to the Menu for opening links
+buttonHome.addEventListener('click', function()
 {
-    gotoLink(homeLink);
+    gotoLink(linkHome);
 });
-aboutButton.addEventListener('click', function()
+buttonAbout.addEventListener('click', function()
 {
-    gotoLink(aboutLink);
+    gotoLink(linkAbout);
+});
+
+
+
+/* =================================== In This Page ================================== */
+
+// Accessing elements
+let buttonPage = document.getElementById('buttonPage');
+let areaPage = document.getElementById('areaPage');
+
+
+// Attaches the event listeners to this page's button for visibility
+buttonPage.addEventListener('click', function()
+{
+    toggleVisibility(areaPage);
 });

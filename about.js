@@ -1,24 +1,14 @@
-// Constants
-const aboutText= `Missouri S&T Computer Engineering graduate currently serving as a Districtwide Technology Support Specialist for Rockwood School District.
-I specialize in providing dedicated, in-person technical support for Rockwood Valley Middle School, ensuring seamless technology integration for both staff and students.
-My expertise lies in high-level troubleshooting, end-user communication, and full-cycle asset management.
-I am passionate about leveraging my engineering background to help resolve technical challenges in real-time.
-Currently, I am expanding my technical knowledge by deepening my skills in Website and Application Development.`;
+/* ================================== In Every Page ================================== */
 
 // Accessing elements
-let menuDropdown = document.getElementById('menuDropdown');
-let menuOutputArea = document.getElementById('menuOutputArea');
-let homeButton = document.getElementById('homeButton');
-let aboutButton  = document.getElementById('aboutButton');
-let paragraph1 = document.getElementById("paragraph1");
+let buttonMenu= document.getElementById('buttonMenu');
+let areaMenu = document.getElementById('areaMenu');
+let buttonHome = document.getElementById('buttonHome');
+let buttonAbout  = document.getElementById('buttonAbout');
 
 // Defining elements
-let homeLink = 'index.html';
-let aboutLink = 'about.html';
-paragraph1.textContent = aboutText;
-
-
-/* ===================================================================================== */
+let linkHome = 'index.html';
+let linkAbout = 'about.html';
 
 
 // Shows or hides an area when a button is clicked
@@ -38,28 +28,45 @@ function toggleVisibility(element)
     }
 }
 
-// Goes to the defined link in the same window and tab, can't do folders well
+// Goes to the defined link in the same window and tab, can't do links via folders
 function gotoLink(element)
 {
     window.location.href = element;
 }
 
 
-/* ===================================================================================== */
-
-
-// Attaches the event listeners for the Menu and for this page's button for visibility
-menuDropdown.addEventListener('click', function()
+// Attaches the event listeners to the Menu for visibility
+buttonMenu.addEventListener('click', function()
 {
-    toggleVisibility(menuOutputArea);
+    toggleVisibility(areaMenu);
 });
 
-// Attaches the event listeners for the Menu and for this page's button for opening links
-homeButton.addEventListener('click', function()
+// Attaches the event listeners to the Menu for opening links
+buttonHome.addEventListener('click', function()
 {
-    gotoLink(homeLink);
+    gotoLink(linkHome);
 });
-aboutButton.addEventListener('click', function()
+buttonAbout.addEventListener('click', function()
 {
-    gotoLink(aboutLink);
+    gotoLink(linkAbout);
 });
+
+
+
+/* =================================== In This Page ================================== */
+
+// Constants
+const textAbout = `
+Missouri S&T Computer Engineering graduate currently serving as a Districtwide Technology Support Specialist for Rockwood School District.
+I specialize in providing dedicated, in-person technical support for Rockwood Valley Middle School,
+ensuring seamless technology integration for both staff and students.
+My expertise lies in high-level troubleshooting, end-user communication, and full-cycle asset management.
+I am passionate about leveraging my engineering background to help resolve technical challenges in real-time.
+Currently, I am expanding my technical knowledge by deepening my skills in Website and Application Development.
+`;
+
+// Accessing elements
+let paragraphAbout = document.getElementById('paragraphAbout')
+
+// Setting Text
+paragraphAbout.textContent = textAbout;

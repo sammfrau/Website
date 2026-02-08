@@ -1,82 +1,82 @@
-/* The backround of this page */
-.page
+/* ======================== Overall ======================== */
+
+/* The overall page */
+.overall
 {
+    display: block;
     margin: 0px;
-    padding: 0px;
+    background-color: white;
 }
 
 
-/* =============================================== */
+/* ========================= Header ======================== */
 
-
-/* The menu overall */
-.menu
+/* The header overall */
+.header
 {
-    margin: 0px;
+    display: flex;
     padding: 5px;
     background-color: black;
-    display: flex;
 }
 
-/* The menu buttons overall */
-.menu > div
+/* The header's buttons overall */
+.header > div
 {
     display: none;
-    padding-left: 5px;
+    padding-left: 4px;
 }
 
-/* The menu button individually*/
-.menu > button
+/* The header's menu button*/
+.header > button
 {
     width: 75px;
-    background-color: lightgray;
+    background-color: darkgrey;
     color: darkslategray;
     font-family: 'Segoe UI';
     font-size: 1em;
     font-weight: bold;
 }
 
-/* The menu button's hover */
-.menu > button:hover
+/* The header's menu button hover */
+.header > button:hover
 {
     background-color: whitesmoke;
     cursor: pointer;
 }
 
-/* The menu dropdown buttons*/
-.menu > div > button
+/* The header's menu displayed buttons*/
+.header > div > button
 {
     width: 75px;
-    background-color: lightgray;
+    background-color: darkgrey;
     color: darkslategray;
     font-family: 'Segoe UI';
     font-size: 1em;
     font-weight: bold;
 }
 
-/* The menu dropdown buttons hover*/
-.menu > div > button:hover
+/* The header's menu displayed buttons hover*/
+.header > div > button:hover
 {
     background-color: whitesmoke;
     cursor: pointer;
 }
 
 
-/* =============================================== */
+/* ======================= This Page ======================= */
 
-
-/* The main part of this page */
-.main
+/* This page's exclusive content */
+.page
 {
+    display: block;
     margin: 0px;
     padding: 1px;
-    height: 100vh;
     background-color: darkslategray;
-    display: block;
+    min-height: 100vh;
 }
 
-/* The header text */
-.main >  h1
+/* This page's header text */
+.page >  h1
 {
     color: lightgrey;
     font-family: 'Segoe UI';
@@ -84,28 +84,28 @@
     text-align: center;
 }
 
-/* The page button */
-.main >  button
+/* This page's button */
+.page >  button
 {
-    background-color: lightgray;
+    display: block;
+    margin: 20px auto;
+    width: fit-content;
+    background-color: darkgrey;
     color: darkslategray;
     font-family: 'Segoe UI';
     font-size: 2em;
     font-weight: bold;
-    display: block;
-    margin: 20px auto;
-    width: fit-content;
 }
 
-/* The page button's hover */
-.main > button:hover
+/* This page's button hover */
+.page > button:hover
 {
     background-color: whitesmoke;
     cursor: pointer;
 }
 
-/* The image and text below this page's button*/
-.main > div
+/* This page's image and text below the button*/
+.page > div
 {
     display: none;
     margin: 20px auto;
@@ -117,40 +117,48 @@
 }
 
 
-/* =============================================== */
-
+/* ========================= Footer ======================== */
 
 /* The footer overall */
 .footer
 {
-    position: absolute;
-    margin: 0px;
-    padding: 5px;
     background-color: black;
-    height: 85px;
-    width: 100%;
 }
 
-/* The bottom Neurodivergent image */
-.imageNeurodivergent
+/* The footer's neurodivergent image */
+.footer > img
 {
     display: block;
-    position: absolute;
-    translate: -50%;
-    left: 50%;
-    width: 200px;
-    height: auto;
+    margin: 0 auto;
+    padding-top: 25px;
+    width: 300px;
+    height: fit-content;
+}
+
+/* The footer's neocities area */
+.footer > div
+{
+    display: flex;
     padding-top: 5px;
+    justify-content: center;
+    align-items: center;
 }
 
-/* The bottom Neocities image */
-.imageNeocities
+/* The footer's neocities text */
+.footer > div > p
 {
-    display: block;
-    position: absolute;
-    translate: -50%;
-    left: 50%;
-    width: 100px;
-    height: auto;
-    padding-top: 35px;
+    padding-right: 5px;
+    color: lightgrey;
+    font-family: monospace;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: right;
+}
+
+/* The footer's neocities image */
+.footer > div > img
+{
+    padding-left: 5px;
+    width: 200px;
+    height: fit-content;
 }
