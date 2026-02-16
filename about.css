@@ -8,6 +8,14 @@
     background-color: white;
 }
 
+/* Font setup */
+.kanit-regular
+{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 
 /* ========================= Header ======================== */
 
@@ -27,18 +35,15 @@
 }
 
 /* The header's menu button*/
-.header > button
+.header > span
 {
-    width: 75px;
+    font-size: 30px;
     background-color: darkgrey;
     color: darkslategray;
-    font-family: 'Segoe UI';
-    font-size: 1em;
-    font-weight: bold;
 }
 
 /* The header's menu button hover */
-.header > button:hover
+.header > span:hover
 {
     background-color: whitesmoke;
     cursor: pointer;
@@ -50,7 +55,7 @@
     width: 75px;
     background-color: darkgrey;
     color: darkslategray;
-    font-family: 'Segoe UI';
+    font-family: 'Kanit';
     font-size: 1em;
     font-weight: bold;
 }
@@ -79,7 +84,7 @@
 .page >  h1
 {
     color: lightgrey;
-    font-family: 'Segoe UI';
+    font-family: 'Kanit';
     font-size: 3em;
     text-align: center;
 }
@@ -100,7 +105,7 @@
     padding: 20px;
     max-width: 1250px;
     color: lightgrey;
-    font-family: 'Segoe UI';
+    font-family: 'Kanit';
     font-size: 24px;
     text-align: center;
 }
