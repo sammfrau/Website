@@ -60,14 +60,3 @@ buttonFun.addEventListener('click', function()
 
 
 /* =================================== In This Page ================================== */
-
-// Accessing elements
-let buttonPage = document.getElementById('buttonPage');
-let areaPage = document.getElementById('areaPage');
-
-
-// Attaches the event listeners to this page's button for visibility
-buttonPage.addEventListener('click', function()
-{
-    toggleVisibility(areaPage);
-});

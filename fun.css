@@ -142,8 +142,8 @@
 /* This page's video below the button*/
 .page > div > video
 {
-    width: fit-content;
-    max-width: 50vw;
+    width: 720px;
+    max-width: 75%;
     height: auto;
 }
 

@@ -110,35 +110,29 @@
     text-align: center;
 }
 
-/* This page's button */
-.page >  button
+/* This page's image */
+.page > img
 {
     display: block;
-    margin: 20px auto;
-    background-color: darkgrey;
-    color: darkslategray;
-    font-family: 'Kanit';
-    font-size: 2em;
-    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 50vw;
+    translate: -50%;
+    width: 400px;
+    max-width: 75%;
+    height: auto;
 }
 
-/* This page's button hover */
-.page > button:hover
+/* This page's text */
+.page > p
 {
-    background-color: whitesmoke;
-    cursor: pointer;
-}
-
-/* This page's image and text below the button*/
-.page > div
-{
-    display: none;
+    display: block;
     margin: 20px auto;
     color: whitesmoke;
     font-family: 'Kanit';
     font-size: 2em;
     text-align: center;
 }
+
 
 
 /* ========================= Footer ======================== */
