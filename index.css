@@ -75,16 +75,36 @@
 .page
 {
     display: block;
-    margin: 0px;
-    padding: 1px;
-    background-color: darkslategray;
+    position: relative;
+    overflow: hidden;
     min-height: 100vh;
+    background-color: darkslategray;
+    width: 100%;
+    transform: rotate(0deg);
+    
+}
+
+/* This page's background image */
+.page::before
+{
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    right: -50%;
+    bottom: -50%;
+    background-image: url("./images/overall/background.png");
+    background-repeat: repeat;
+    background-position: center;
+    z-index: -1;
+    transform: rotate(-45deg)
 }
 
 /* This page's header text */
 .page >  h1
 {
-    color: lightgrey;
+    display: block;
+    color: whitesmoke;
     font-family: 'Kanit';
     font-size: 3em;
     text-align: center;
@@ -95,7 +115,6 @@
 {
     display: block;
     margin: 20px auto;
-    width: fit-content;
     background-color: darkgrey;
     color: darkslategray;
     font-family: 'Kanit';
@@ -115,8 +134,7 @@
 {
     display: none;
     margin: 20px auto;
-    width: fit-content;
-    color: lightgrey;
+    color: whitesmoke;
     font-family: 'Kanit';
     font-size: 2em;
     text-align: center;

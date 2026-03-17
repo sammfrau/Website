@@ -5,10 +5,12 @@ let buttonMenu= document.getElementById('buttonMenu');
 let areaMenu = document.getElementById('areaMenu');
 let buttonHome = document.getElementById('buttonHome');
 let buttonAbout  = document.getElementById('buttonAbout');
+let buttonFun  = document.getElementById('buttonFun');
 
 // Defining elements
 let linkHome = 'index.html';
 let linkAbout = 'about.html';
+let linkFun = 'fun.html';
 
 
 // Shows or hides an area when a button is clicked
@@ -49,6 +51,10 @@ buttonHome.addEventListener('click', function()
 buttonAbout.addEventListener('click', function()
 {
     gotoLink(linkAbout);
+});
+buttonFun.addEventListener('click', function()
+{
+    gotoLink(linkFun);
 });
 
 

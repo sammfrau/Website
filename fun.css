@@ -1,0 +1,195 @@
+/* ======================== Overall ======================== */
+
+/* The overall page */
+.overall
+{
+    display: block;
+    margin: 0px;
+    background-color: white;
+}
+
+/* Font setup */
+.kanit-regular
+{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* ========================= Header ======================== */
+
+/* The header overall */
+.header
+{
+    display: flex;
+    padding: 5px;
+    background-color: black;
+}
+
+/* The header's buttons overall */
+.header > div
+{
+    display: none;
+    padding-left: 4px;
+}
+
+/* The header's menu button*/
+.header > span
+{
+    font-size: 30px;
+    background-color: darkgrey;
+    color: darkslategray;
+}
+
+/* The header's menu button hover */
+.header > span:hover
+{
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+/* The header's menu displayed buttons*/
+.header > div > button
+{
+    width: 75px;
+    height: 30px;
+    background-color: darkgrey;
+    color: darkslategray;
+    font-family: 'Kanit';
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* The header's menu displayed buttons hover*/
+.header > div > button:hover
+{
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+
+/* ======================= This Page ======================= */
+
+/* This page's exclusive content */
+.page
+{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    background-color: darkslategray;
+    width: 100%;
+    transform: rotate(0deg);
+    
+}
+
+/* This page's background image */
+.page::before
+{
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    right: -50%;
+    bottom: -50%;
+    background-image: url("./images/overall/background.png");
+    background-repeat: repeat;
+    background-position: center;
+    z-index: -1;
+    transform: rotate(-45deg)
+}
+
+/* This page's header text */
+.page >  h1
+{
+    color: whitesmoke;
+    font-family: 'Kanit';
+    font-size: 3em;
+    text-align: center;
+}
+
+/* This page's button */
+.page >  button
+{
+    display: block;
+    margin: 20px auto;
+    background-color: darkgrey;
+    color: darkslategray;
+    font-family: 'Kanit';
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* This page's button hover */
+.page > button:hover
+{
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+/* This page's video and text below the button*/
+.page > div
+{
+    display: none;
+    margin: 20px auto;
+    color: whitesmoke;
+    font-family: 'Kanit';
+    font-size: 2em;
+    text-align: center;
+}
+
+/* This page's video below the button*/
+.page > div > video
+{
+    width: fit-content;
+    max-width: 50vw;
+    height: auto;
+}
+
+
+/* ========================= Footer ======================== */
+
+/* The footer overall */
+.footer
+{
+    background-color: black;
+}
+
+/* The footer's neurodivergent image */
+.footer > img
+{
+    display: block;
+    margin: 0 auto;
+    padding-top: 25px;
+    width: 300px;
+    height: fit-content;
+}
+
+/* The footer's neocities area */
+.footer > div
+{
+    display: flex;
+    padding-top: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* The footer's neocities text */
+.footer > div > p
+{
+    padding-right: 5px;
+    color: lightgrey;
+    font-family: monospace;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: right;
+}
+
+/* The footer's neocities image */
+.footer > div > img
+{
+    padding-left: 5px;
+    width: 200px;
+    height: fit-content;
+}
