@@ -88,13 +88,14 @@
 {
     content: "";
     position: absolute;
-    top: -50%;
-    left: -50%;
-    right: -50%;
-    bottom: -50%;
+    top: -100%;
+    left: -100%;
+    right: -100%;
+    bottom: -100%;
     background-image: url("./images/overall/background.png");
     background-repeat: repeat;
     background-position: center;
+    background-size: 15px;
     z-index: -1;
     transform: rotate(-45deg)
 }
