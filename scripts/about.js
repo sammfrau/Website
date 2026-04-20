@@ -72,7 +72,7 @@ Currently, I am expanding my technical knowledge by deepening my skills in Websi
 `;
 
 // Accessing elements
-let paragraphAbout = document.getElementById('paragraphAbout')
+let paragraphAbout = document.getElementById('paragraphAbout');
 
 // Setting Text
 paragraphAbout.textContent = textAbout;
