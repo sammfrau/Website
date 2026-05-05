@@ -63,12 +63,7 @@ buttonFun.addEventListener('click', function()
 
 // Constants
 const textAbout = `
-Missouri S&T Computer Engineering graduate currently serving as a Districtwide Technology Support Specialist for Rockwood School District.
-I specialize in providing dedicated, in-person technical support for Rockwood Valley Middle School,
-ensuring seamless technology integration for both staff and students.
-My expertise lies in high-level troubleshooting, end-user communication, and full-cycle asset management.
-I am passionate about leveraging my engineering background to help resolve technical challenges in real-time.
-Currently, I am expanding my technical knowledge by deepening my skills in Website and Application Development.
+Big Gamer Energy
 `;
 
 // Accessing elements
