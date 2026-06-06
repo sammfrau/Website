@@ -9,8 +9,8 @@ let buttonFun  = document.getElementById('buttonFun');
 
 // Defining elements
 let linkHome = '/index.html';
-let linkAbout = '/html/about.html';
-let linkFun = '/html/fun.html';
+let linkAbout = '/about.html';
+let linkFun = '/fun.html';
 
 
 // Shows or hides an area when a button is clicked
