@@ -87,13 +87,12 @@
 /* This page's exclusive content */
 .page
 {
-    display: grid;
+    display: block;
     position: relative;
     overflow: hidden;
     min-height: 100vh;
     color: whitesmoke;
     font-family: 'Kanit';
-    text-align: center;
 }
 
 /* Area 1 */
