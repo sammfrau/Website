@@ -3,9 +3,7 @@
 /* The overall page */
 .overall
 {
-    display: block;
     margin: 0;
-    background-color: white;
 }
 
 /* Font setup */
@@ -23,21 +21,15 @@
 .header
 {
     display: flex;
-    padding: 5px;
     background-color: black;
-}
-
-/* The header's buttons overall */
-.header > div
-{
-    display: none;
-    padding-left: 4px;
+    padding: 5px;
+    align-items: center;
 }
 
 /* The header's menu button*/
 .header > span
 {
-    font-size: 30px;
+    font-size: 32px;
     background-color: darkgrey;
     color: darkslategray;
 }
@@ -49,15 +41,21 @@
     cursor: pointer;
 }
 
+/* The header's buttons overall */
+.header > div
+{
+    display: none;
+    padding-left: 5px;
+}
+
 /* The header's menu displayed buttons*/
 .header > div > button
 {
     width: 75px;
-    height: 30px;
     background-color: darkgrey;
     color: darkslategray;
-    font-family: 'Kanit';
     font-size: 1em;
+    font-family: 'Kanit';
     font-weight: bold;
 }
 
@@ -69,6 +67,19 @@
 }
 
 
+.header > p
+{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    color: whitesmoke;
+    font-size: 2em;
+    font-family: 'Kanit';
+    font-weight: bold;
+}
+
+
 /* ======================= This Page ======================= */
 
 /* This page's background image */
@@ -77,29 +88,25 @@
     content: "";
     position: absolute;
     z-index: -1;
-    top: 50%;
-    left: 50%;
-    width: max(calc(100vh * 1.42), calc(100vw * 1.42));
-    height: max(calc(100vh * 1.42), calc(100vw * 1.42));
-    align-items: center;
-    justify-content: center;
-    background-image: url("/images/overall/background.png");
+    width: 100%;
+    height: 100%;
+    background-color: darkslategray;
+    background-image: url("/assets/overall/background.png");
     background-repeat: repeat;
     background-position: center;
-    background-size: 25px;
-    transform: translate(-50%, -50%) rotate(-45deg);
+    background-size: 20px;
 }
 
 /* This page's exclusive content */
 .page
 {
-    display: block;
+    display: grid;
     position: relative;
     overflow: hidden;
     min-height: 100vh;
-    width: 100%;
-    background-color: darkslategray;
-    transform: rotate(0deg);
+    color: whitesmoke;
+    font-family: 'Kanit';
+    text-align: center;
 }
 
 /* This page's header text */
@@ -118,7 +125,7 @@
 {
     display: block;
     margin: 20px auto;
-    width: 256px;
+    width: 512px;
     max-width: 90%;
     height: auto;
 }

@@ -1,0 +1,278 @@
+/* ======================== Overall ======================== */
+
+/* The overall page */
+.overall
+{
+    margin: 0;
+}
+
+/* Font setup */
+.kanit-regular
+{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* ========================= Header ======================== */
+
+/* The header overall */
+.header
+{
+    display: flex;
+    background-color: black;
+    padding: 5px;
+    align-items: center;
+}
+
+/* The header's menu button*/
+.header > span
+{
+    font-size: 32px;
+    background-color: darkgrey;
+    color: darkslategray;
+}
+
+/* The header's menu button hover */
+.header > span:hover
+{
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+/* The header's buttons overall */
+.header > div
+{
+    display: none;
+    padding-left: 5px;
+}
+
+/* The header's menu displayed buttons*/
+.header > div > button
+{
+    width: 75px;
+    background-color: darkgrey;
+    color: darkslategray;
+    font-size: 1em;
+    font-family: 'Kanit';
+    font-weight: bold;
+}
+
+/* The header's menu displayed buttons hover*/
+.header > div > button:hover
+{
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+
+.header > p
+{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    color: whitesmoke;
+    font-size: 2em;
+    font-family: 'Kanit';
+    font-weight: bold;
+}
+
+
+/* ======================= This Page ======================= */
+
+/* This page's background image */
+.page::before
+{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: darkslategray;
+    background-image: url("/assets/overall/background.png");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 20px;
+}
+
+/* This page's exclusive content */
+.page
+{
+    display: grid;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    color: whitesmoke;
+    font-family: 'Kanit';
+    text-align: center;
+}
+
+/* Area 1 */
+.areaPage1
+{
+    justify-items: center;
+}
+
+/* This page's video 1 header text */
+.areaPage1 >  h1
+{
+    color: whitesmoke;
+    font-family: 'Kanit';
+    font-size: 3em;
+    text-align: center;
+}
+
+/* This page's button */
+.areaPage1 >  button
+{
+    display: block;
+    position: relative;
+    margin-bottom: 25px;
+    width: 225px;
+    height: 50px;
+    align-items: center;
+    background-color: darkgrey;
+    color: darkslategray;
+    font-family: 'Kanit';
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* This page's button hover */
+.areaPage1 > button:hover
+{
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+/* Video 1 Area & Text */
+.areaPage1 > div
+{
+    display: none;
+}
+
+/* This page's video below the button*/
+.areaPage1 > div > video
+{
+    width: 720px;
+    height: auto;
+    max-width: 100%;
+}
+
+/* This page's text below the button*/
+.areaPage1 > div > p
+{
+    color: whitesmoke;
+    font-family: 'Kanit';
+    font-size: 2em;
+    text-align: center;
+}
+
+/* Area 2 */
+.areaPage2
+{
+    justify-items: center;
+}
+
+/* This page's video 1 header text */
+.areaPage2 >  h1
+{
+    color: whitesmoke;
+    font-family: 'Kanit';
+    font-size: 3em;
+    text-align: center;
+}
+
+/* This page's button */
+.areaPage2 >  button
+{
+    display: block;
+    position: relative;
+    margin-bottom: 25px;
+    width: 225px;
+    height: 50px;
+    align-items: center;
+    background-color: darkgrey;
+    color: darkslategray;
+    font-family: 'Kanit';
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* This page's button hover */
+.areaPage2 > button:hover
+{
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+/* Video 2 Area & Text */
+.areaPage2 > div
+{
+    display: none;
+}
+
+/* This page's video below the button*/
+.areaPage2 > div > video
+{
+    width: 720px;
+    height: auto;
+    max-width: 100%;
+}
+
+/* This page's text below the button*/
+.areaPage2 > div > p
+{
+    color: whitesmoke;
+    font-family: 'Kanit';
+    font-size: 2em;
+    text-align: center;
+}
+
+
+/* ========================= Footer ======================== */
+
+/* The footer overall */
+.footer
+{
+    background-color: black;
+}
+
+/* The footer's neurodivergent image */
+.footer > img
+{
+    display: block;
+    margin: 0 auto;
+    padding-top: 25px;
+    width: 300px;
+    height: fit-content;
+}
+
+/* The footer's neocities area */
+.footer > div
+{
+    display: flex;
+    padding-top: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* The footer's neocities text */
+.footer > div > p
+{
+    padding-right: 5px;
+    color: lightgrey;
+    font-family: monospace;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: right;
+}
+
+/* The footer's neocities image */
+.footer > div > img
+{
+    width: 200px;
+    height: fit-content;
+}
