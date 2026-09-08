@@ -67,19 +67,6 @@
 }
 
 
-.header > p
-{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    text-align: center;
-    color: whitesmoke;
-    font-size: 2em;
-    font-family: 'Kanit';
-    font-weight: bold;
-}
-
-
 /* ======================= This Page ======================= */
 
 /* This page's background image */
